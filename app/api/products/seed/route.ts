@@ -1,18 +1,18 @@
-import data from '@/lib/data'
-import dbConnect from '@/lib/dbConnect'
-import ProductModel from '@/lib/models/ProductModel'
-import UserModel from '@/lib/models/UserModel'
-import { NextRequest, NextResponse } from 'next/server'
+// import data from '@/lib/data'
+// import dbConnect from '@/lib/dbConnect'
+// import ProductModel from '@/lib/models/ProductModel'
+// import UserModel from '@/lib/models/UserModel'
+// import { NextRequest, NextResponse } from 'next/server'
 
-export const GET = async (request: NextRequest) => {
-  const { products } = data
-  await dbConnect()
+// export const GET = async (request: NextRequest) => {
+//   const { products } = data
+//   await dbConnect()
 
-  await ProductModel.deleteMany()
-  await ProductModel.insertMany(products)
+//   await ProductModel.deleteMany()
+//   await ProductModel.insertMany(products)
 
-  return NextResponse.json({
-    message: 'seeded successfully',
-    products,
-  })
-}
+//   return NextResponse.json({
+//     message: 'seeded successfully',
+//     products,
+//   })
+// }
