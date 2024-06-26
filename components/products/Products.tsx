@@ -31,9 +31,7 @@ const Products: React.FC<ProductsProps> = ({
   }, [currentPage, query])
 
   const fetchProducts = async () => {
-    const res = await fetch(
-      'https://vercel-deployment-amazona-np97.vercel.app/api/products'
-    )
+    const res = await fetch('/api/products')
     const data = await res.json()
     setProducts(data)
 
