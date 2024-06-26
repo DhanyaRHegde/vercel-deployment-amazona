@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import { convertDocToObj, itemsPerPage } from '@/lib/utils'
 import { Product } from '@/lib/models/ProductModel'
 import Pagination from '@/components/products/Pagination'
