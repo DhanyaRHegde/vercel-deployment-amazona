@@ -11,6 +11,7 @@ interface FormState {
     rating: number
     slug: string
     category: string
+    countInStock: number
   }
   setIsValid: (isValid: boolean) => void
   setFormData: (data: Partial<FormState['formData']>) => void
@@ -28,6 +29,7 @@ export const useAddStore = create<FormState>((set) => ({
     rating: 0,
     slug: '',
     category: '',
+    countInStock: 0,
   },
   setIsValid: (isValid) => set({ isValid }),
   setFormData: (data) =>
@@ -43,6 +45,7 @@ export const useAddStore = create<FormState>((set) => ({
         rating: 0,
         slug: '',
         category: '',
+        countInStock: 0,
       },
     }),
 }))
