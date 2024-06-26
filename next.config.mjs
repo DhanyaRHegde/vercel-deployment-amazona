@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    domains: ['loremflickr.com'], // Add domains for Next.js Image component
+  },
+}
 
-export default nextConfig;
+export default nextConfig

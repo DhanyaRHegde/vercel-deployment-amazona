@@ -16,6 +16,10 @@
   }
 }
 
+html {
+  scrollbar-width: none; /* Firefox */
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,10 +28,24 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  overflow: -moz-scrollbars-none;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* input {
+  @apply outline-none focus:outline-none focus:border-transparent focus:ring-2 border border-gray-300 rounded p-2;
+} */
+
+input {
+  @apply outline-none focus:outline-none focus:border-gray-300 border border-gray-300 rounded p-2;
 }
