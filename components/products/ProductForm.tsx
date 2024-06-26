@@ -144,10 +144,10 @@ const ProductForm = ({ setOpen }: any) => {
             placeholder="CountInStock"
             id="countinstock"
             type="number"
-            {...register('rating', { valueAsNumber: true })}
+            {...register('countInStock', { valueAsNumber: true })}
           />
           <span className="text-red-500 text-sm">
-            {errors.countIinStock?.message}
+            {errors.countInStock?.message}
           </span>
         </label>
         <div className="flex justify-end gap-3 mt-4">

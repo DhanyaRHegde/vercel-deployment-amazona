@@ -38,7 +38,7 @@ export type Product = {
   category: string
   rating: number
   numReviews?: number
-  countInStock?: number
+  countInStock: number
   colors?: []
   sizes?: []
 }
@@ -55,5 +55,5 @@ export const productAuthorisation = z.object({
   image: z.string().nonempty({ message: 'Image is required' }),
   rating: z.number().nonnegative({ message: 'Invalid Rating' }),
   category: z.string().nonempty({ message: 'Category is required' }),
-  countIinStock: z.number().nonnegative({ message: 'Add Count' }),
+  countInStock: z.number().nonnegative({ message: 'Add Count' }),
 })
