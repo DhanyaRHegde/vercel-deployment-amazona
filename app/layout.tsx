@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/header/Header'
-// import Providers from '@/components/Providers'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +18,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <Providers> */}
         <div className="min-h-screen flex flex-col">
           <Header />
           {children}
@@ -27,7 +25,6 @@ export default function RootLayout({
             <p>Copyright © 2024 - All right reserved by Next Project</p>
           </footer>
         </div>
-        {/* </Providers> */}
       </body>
     </html>
   )

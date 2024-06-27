@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import ConfirmationDialog from '@/app/(front)/product/DeleteDialog' // Replace with your ConfirmationDialog component
+import ConfirmationDialog from './DeleteDialog' // Replace with your ConfirmationDialog component
 import ModifyDialog from './UpdateDialog' // Replace with your ModifyDialog component
 import useProductStore from '@/lib/hooks/useProductStore' // Adjust the path as per your project structure
 import { Product } from '@/lib/models/ProductModel'

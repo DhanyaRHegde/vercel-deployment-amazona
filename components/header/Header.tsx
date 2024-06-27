@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Menu from './Menu'
-import { SearchBox } from './SearchBox'
-import { useRouter } from 'next/router'
 
 const Header = () => {
   return (

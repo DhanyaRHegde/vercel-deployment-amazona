@@ -35,12 +35,10 @@ const Products: React.FC<ProductsProps> = ({
     const data = await res.json()
     setProducts(data)
 
-    // Filter products based on search query
     const filteredProducts = data.filter((product: Product) =>
       product.name.toLowerCase().includes(query.toLowerCase())
     )
 
-    // Paginate filtered products
     const startIndex = (currentPage - 1) * PAGE_SIZE
     const endIndex = startIndex + PAGE_SIZE
     const paginated = filteredProducts.slice(startIndex, endIndex)

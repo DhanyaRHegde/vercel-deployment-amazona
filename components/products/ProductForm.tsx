@@ -4,7 +4,7 @@ import { SubmitHandler, useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { productAuthorisation } from '@/lib/models/ProductModel'
 import { addProduct } from '@/lib/methodAPI'
-import { useAddStore } from '@/lib/AddFormStore'
+import { useAddStore } from '@/lib/hooks/AddFormStore'
 
 type Data = z.infer<typeof productAuthorisation>
 

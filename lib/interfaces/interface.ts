@@ -16,3 +16,10 @@ export interface ModifyDialogProps {
   onConfirm: (modifiedProduct: Product) => void
   onCancel: () => void
 }
+
+export interface ConfirmationDialogProps {
+  isOpen: boolean
+  onConfirm: () => void
+  onCancel: () => void
+  isDeleting: boolean
+}

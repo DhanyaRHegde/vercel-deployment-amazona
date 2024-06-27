@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import * as Dialog from '@radix-ui/react-dialog'
 import { Product } from '@/lib/models/ProductModel'
-import useProductStore from '@/lib/hooks/useProductStore' // Adjust path as per your project structure
 import { ModifyDialogProps } from '@/lib/interfaces/interface'
 
 const ModifyDialog: React.FC<ModifyDialogProps> = ({
